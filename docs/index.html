@@ -1,0 +1,99 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SEO Text Editor | Keywords Cross-Checked | SERP Preview</title>
+    <script src="bundle.min.js"></script>
+    <meta name="description" content="SEO Text Editor allows editors to write consistent texts. Keywords are cross-checked in Title, Heading and the Copy. Stop Words and SERP preview included.">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <h1>SEO Text Editor<p>Cross-checks keywords, indicates field length, SERP preview available</p></h1>
+
+                <div class="row">
+                    <div class="col-xs-12 hidden-xs hidden-sm">
+                        <div class="intro">
+                            <div class="well">
+                                <p>This SEO Text Editor enables editors to write consistent, SEO optimised texts.</p>
+                                <p>The tool checks the field length of Title, Meta Description, Heading 1 and the Copy itself. Additionally, Keywords are cross-checked to make sure they appear consistently in the various fields. At the same time it ignores
+                                    German and English Stop Words. Last but not least, a SERP preview is available.</p>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h2 class="panel-title">Applied SEO rules</h2>
+                                </div>
+                                <div class="panel-body">
+                                    <ul>
+                                        <li>Common English and German stopwords are ignored.</li>
+                                        <li>Character and pixel count are validated and displayed above the input fields.</li>
+                                        <li>Keywords in the <strong>Title</strong> need to appear in the <strong>Text</strong>.</li>
+                                        <li>Keywords in the <strong>Title</strong> are not to be repeated in the <strong>Title</strong>.</li>
+                                        <li>Keywords in the <strong>Headline 1</strong> need to appear in the <strong>Text</strong>.</li>
+                                        <li>2-3 Keywords in the <strong>Meta Description</strong> need to appear in the <strong>Text</strong>.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div>(This is a DRAFT and preview, only.)</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-7">
+                <label for="title">SERP Preview</label>
+                <div id="serp-box">
+                    <div>
+                        <a href="#" id="serp-title">Write Title Tags that Describe the Content</a>
+                    </div>
+                    <div id="serp-url-desc">
+                        <div id="serp-url">www.example.com/</div>
+                        <div id="serp-desc">Use meta descriptions to describe your page content. Google uses relevant meta descriptions to create the snippet that Describe your page in SERP listings.</div>
+                    </div>
+                </div>
+                <form>
+                    <div class="form-group">
+                        <label for="url">URL</label><label class="error" id="url-length"></label>
+                        <input type="text" class="form-control" id="url" placeholder="www.example.com/">
+                        <div id="url-quality"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="title">Site Title</label><label class="error lengthLow" id="title-length"></label>
+                        <input type="text" class="form-control" id="title" placeholder="Write Title Tags that Describe the Content and Encourages Clicks">
+                        <div id="title-quality">
+                            <div class="row">
+                                <div class="col-xs-12">&nbsp;</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="title">Meta Description</label><label class="error lengthLow" id="description-length"></label>
+                        <textarea id="description" rows="3" class="form-control" placeholder="Use meta descriptions to describe your page content. Google uses relevant meta descriptions to create the snippet that Describe your page in SERP listings. Include 2-3 keywords from the title."></textarea>
+                        <div id="description-quality"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="title">Heading 1</label><label class="error lengthLow" id="h1-length"></label>
+                        <input type="text" class="form-control" id="h1" placeholder="Use keywords in the headline.">
+                        <div id="h1-quality"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="text">Text</label><label class="error lengthLow" id="text-length"></label>
+                        <textarea id="text" rows="7" class="form-control" placeholder="Write a text that contains keywords from the title and headline."></textarea>
+                        <div id="text-quality">
+                            <div class="row">
+                                <div class="col-xs-12">&nbsp;</div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="serp-title-test" style="font-size: 18px; font-family: arial, sans-serif;"></div>
+    </div>
+</body>
+
+</html>

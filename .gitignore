@@ -3,3 +3,5 @@
 !/docs/fonts
 /docs/dicts
 !/CNAME
+.DS_Store
+/docs/.DS_Store

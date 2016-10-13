@@ -18,42 +18,54 @@
     <div class="container">
 
         <div class="row">
-            <div class="col-md-5">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="brand">SEO Text Editor</div>
-                        <h1 class="slogan hidden-xs"><span class="hidden-xs hidden-sm">&bull; </span>Cross-checks keywords<span class="hidden-md hidden-lg"> &bull; </span><p class="hidden-xs hidden-sm"></p><span class="hidden-xs hidden-sm">&bull; </span>Shows text length in pixels, chars, words<span class="hidden-md hidden-lg"> &bull; </span><p class="hidden-xs hidden-sm"></p><span class="hidden-xs hidden-sm">&bull; </span>SERP preview</h1>
+            <div class="col-xs-9">
+                <div class="brand">SEO Text Editor</div>
+            </div>
+            <div class="col-xs-3">
+                <button style="float:right;margin-top:10px;" type="button" class="btn btn-default" data-toggle="modal" data-target=".bs-example-modal-lg">How it works</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <h1 class="slogan hidden-xs">Cross-checks keywords &bull; Shows text length in pixels, chars, words &bull; SERP preview</h1>
+            </div>
+        </div>
+
+        <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h2 class="modal-title">How SEO Text Editor works</h2>
                     </div>
-                </div>
-                <div class="row hidden-xs hidden-sm">
-                    <div class="col-xs-12">
-                        <div class="intro">
-                            <div class="well">
-                                <p><strong>This SEO Text Editor enables editors to write consistent, SEO optimised texts.</strong></p>
-                                <p>The tool checks the field length of Title, Meta Description, Heading 1 and the Copy itself. Additionally, Keywords are cross-checked to make sure they appear consistently in the various fields. At the same time it ignores
-                                    German and English Stop Words. Last but not least, a SERP preview is available.</p>
+                    <div class="modal-body intro">
+                        <div class="well intro-text">
+                            <p><strong>SEO Text Editor enables editors to write consistent, SEO optimised texts.</strong></p>
+                            <p>The tool checks the field length of Title, Meta Description, Heading 1 and the Copy itself. Additionally, Keywords are cross-checked to make sure they appear consistently in the various fields. At the same time it ignores German
+                                and English Stop Words. Last but not least, a SERP preview is available.</p>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h2 class="panel-title">Applied SEO rules</h2>
                             </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h2 class="panel-title">Applied SEO rules</h2>
-                                </div>
-                                <div class="panel-body">
-                                    <ul>
-                                        <li>Common English and German stopwords are ignored.</li>
-                                        <li>Character and pixel count are validated and displayed above the input fields.</li>
-                                        <li>Keywords in the <strong>Title</strong> need to appear in the Text.</li>
-                                        <li>Keywords in the <strong>Title</strong> are not to be repeated in the Title.</li>
-                                        <li>Keywords in the <strong>Headline 1</strong> need to appear in the Text.</li>
-                                        <li>At least 3 Keywords in the <strong>Meta Description</strong> need to appear in the Text.</li>
-                                    </ul>
-                                </div>
+                            <div class="panel-body intro-rules">
+                                <ul>
+                                    <li>Common English and German stopwords are ignored.</li>
+                                    <li>Character and pixel count are validated and displayed above the input fields.</li>
+                                    <li>Keywords in the <strong>Title</strong> need to appear in the Text.</li>
+                                    <li>Keywords in the <strong>Title</strong> are not to be repeated in the Title.</li>
+                                    <li>Keywords in the <strong>Headline 1</strong> need to appear in the Text.</li>
+                                    <li>At least 3 Keywords in the <strong>Meta Description</strong> need to appear in the Text.</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
-            <div class="col-md-7">
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12">
                 <div class="form-group">
                     <label for="serp-box" class="name">SERP Preview</label>
                     <div id="serp-box" class="panel">
@@ -66,46 +78,80 @@
                         </div>
                     </div>
                 </div>
-                <form>
-                    <div class="form-group">
-                        <label for="url" class="name">URL</label><span id="url-warning" class="label label-warning"><span class="glyphicon glyphicon-warning" aria-hidden="true"></span> Entering an URL will update all fields!</span>
-                        <label id="url-spinner"><span class="glyphicon glyphicon-repeat normal-right-spinner"></span> Please wait...</label>
+                <div class="form-group">
 
-                        <!-- label class="error" id="url-length"></label -->
-                        <div class="form-control" id="url" placeholder="www.example.com/"></div>
-                        <!-- div id="url-quality"></div -->
-                    </div>
-                    <div class="form-group">
-                        <label for="title" class="name">Site Title</label><label class="error lengthLow" id="title-length"></label>
-                        <div class="editable form-control" id="title" placeholder="Write Title Tags that Describe the Content and Encourages Clicks"></div>
-                        <div id="title-quality">
-                            <div class="row">
-                                <div class="col-xs-12">&nbsp;</div>
-                            </div>
+                    <label for="url" class="name">URL</label>
+                    <span id="url-warning" class="label label-warning"><span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span> Entering an URL will update all fields!</span>
+                    <label id="url-spinner"><span class="glyphicon glyphicon-repeat normal-right-spinner"></span> Please wait...</label>
+
+                    <!-- label class="error" id="url-length"></label -->
+                    <div class="form-control" id="url" placeholder="www.example.com/"></div>
+                    <!-- div id="url-quality"></div -->
+                </div>
+                <div class="form-group">
+                    <!-- button class="btn btn-primary" data-clipboard-text="1">Click me</button -->
+
+                    <label for="title" class="name">Site Title</label>
+                    <button class="btn btn-default copyToClipboard copy-status-do">
+                        <span class="copy-do"><span class="glyphicon glyphicon-copy"></span> Copy</span>
+                        <span class="copy-ok"><span class="glyphicon glyphicon-ok"></span> Copy</span>
+                    </button>
+                    <label class="error lengthLow" id="title-length"></label>
+                    <div class="editable form-control" id="title" placeholder="Write Title Tags that Describe the Content and Encourages Clicks"></div>
+                    <div id="title-quality">
+                        <div class="row">
+                            <div class="col-xs-12">&nbsp;</div>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label for="description" class="name">Meta Description</label><label class="error lengthLow" id="description-length"></label>
-                        <div id="description" class="form-control editable textarea" placeholder="Use meta descriptions to describe your page content. Google uses relevant meta descriptions to create the snippet that Describe your page in SERP listings."></div>
-                        <div id="description-quality"></div>
-                    </div>
-                    <div class="form-group">
-                        <label for="h1" class="name">Heading 1</label><label class="error lengthLow" id="h1-length"></label>
-                        <div class="form-control editable" id="h1" placeholder="Use keywords in the headline."></div>
-                        <div id="h1-quality"></div>
-                    </div>
-                    <div class="form-group">
-                        <label for="text" class="name">Text</label><label class="error lengthLow" id="text-length"></label>
-                        <div id="text" class="form-control editable textarea scrollable" placeholder="Write a text that contains keywords from the title, description and headline."></div>
-                        <div id="text-quality">
-                            <div class="row">
-                                <div class="col-xs-12">&nbsp;</div>
-                            </div>
+                </div>
+                <div class="form-group">
+                    <label for="description" class="name">Meta Description</label>
+                    <button class="btn btn-default copyToClipboard copy-status-do">
+                        <span class="copy-do"><span class="glyphicon glyphicon-copy"></span> Copy</span>
+                        <span class="copy-ok"><span class="glyphicon glyphicon-ok"></span> Copy</span>
+                    </button>
+                    <label class="error lengthLow" id="description-length"></label>
+                    <div id="description" class="form-control editable textarea" placeholder="Use meta descriptions to describe your page content. Google uses relevant meta descriptions to create the snippet that Describe your page in SERP listings."></div>
+                    <div id="description-quality"></div>
+                </div>
+                <div class="form-group">
+                    <label for="h1" class="name">Heading 1</label>
+                    <button class="btn btn-default copyToClipboard copy-status-do">
+                        <span class="copy-do"><span class="glyphicon glyphicon-copy"></span> Copy</span>
+                        <span class="copy-ok"><span class="glyphicon glyphicon-ok"></span> Copy</span>
+                    </button>
+                    <label class="error lengthLow" id="h1-length"></label>
+                    <div class="form-control editable" id="h1" placeholder="Use keywords in the headline."></div>
+                    <div id="h1-quality"></div>
+                </div>
+                <div class="form-group">
+                    <label for="text" class="name">Text</label>
+                    <button class="btn btn-default copyToClipboard copy-status-do">
+                        <span class="copy-do"><span class="glyphicon glyphicon-copy"></span> Copy</span>
+                        <span class="copy-ok"><span class="glyphicon glyphicon-ok"></span> Copy</span>
+                    </button>
+                    <label class="error lengthLow" id="text-length"></label>
+                    <div id="text" class="form-control editable textarea scrollable" placeholder="Write a text that contains keywords from the title, description and headline."></div>
+                    <div id="text-quality">
+                        <div class="row">
+                            <div class="col-xs-12">&nbsp;</div>
                         </div>
                     </div>
-                </form>
+                </div>
             </div>
+            <!-- div class="col-xs-4">
+                <label for="serp-box" class="name">&nbsp;</label>
+                <div class="panel panel-danger">
+                    <div class="panel-heading">
+                        <h2 class="panel-title">We need to talk</h2>
+                    </div>
+                    <div class="panel-body">
+                        abc
+                    </div>
+                </div>
+            </div -->
         </div>
+
         <div class="row spacer">
             <div class="col-md-5">
             </div>

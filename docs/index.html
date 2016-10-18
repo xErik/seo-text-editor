@@ -80,16 +80,20 @@
                 </div>
                 <div class="form-group">
 
-                    <label for="url" class="name">URL</label>
-                    <span id="url-warning" class="label label-warning"><span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span> Entering an URL will update all fields!</span>
-                    <label id="url-spinner"><span class="glyphicon glyphicon-repeat normal-right-spinner"></span> Please wait...</label>
-
-                    <!-- label class="error" id="url-length"></label -->
-                    <div class="form-control" id="url" placeholder="www.example.com/"></div>
-                    <!-- div id="url-quality"></div -->
+                    <div>
+                        <label for="url" class="name">URL</label>
+                        <label class="error lengthLow" id="url-length"></label>
+                        <span id="url-warning" class="label label-warning"><span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span> Entering an URL will update all fields!</span>
+                        <label id="url-spinner"><span class="glyphicon glyphicon-repeat normal-right-spinner"></span> Please wait...</label>
+                    </div>
+                    <div class="input-group" style="width:100%;">
+                        <div class="form-control" id="url" placeholder="www.example.com/"></div>
+                        <span class="input-group-btn">
+                            <button id="urlreload" class="btn btn-default" type="button">Reload</button>
+                        </span>
+                    </div>
                 </div>
                 <div class="form-group">
-                    <!-- button class="btn btn-primary" data-clipboard-text="1">Click me</button -->
 
                     <label for="title" class="name">Site Title</label>
                     <button class="btn btn-default copyToClipboard copy-status-do">
@@ -98,11 +102,6 @@
                     </button>
                     <label class="error lengthLow" id="title-length"></label>
                     <div class="editable form-control" id="title" placeholder="Write Title Tags that Describe the Content and Encourages Clicks"></div>
-                    <div id="title-quality">
-                        <div class="row">
-                            <div class="col-xs-12">&nbsp;</div>
-                        </div>
-                    </div>
                 </div>
                 <div class="form-group">
                     <label for="description" class="name">Meta Description</label>
@@ -111,8 +110,7 @@
                         <span class="copy-ok"><span class="glyphicon glyphicon-ok"></span> Copy</span>
                     </button>
                     <label class="error lengthLow" id="description-length"></label>
-                    <div id="description" class="form-control editable textarea" placeholder="Use meta descriptions to describe your page content. Google uses relevant meta descriptions to create the snippet that Describe your page in SERP listings."></div>
-                    <div id="description-quality"></div>
+                    <div id="description" class="form-control editable textarea-small" placeholder="Use meta descriptions to describe your page content. Google uses relevant meta descriptions to create the snippet that Describe your page in SERP listings."></div>
                 </div>
                 <div class="form-group">
                     <label for="h1" class="name">Heading 1</label>
@@ -122,7 +120,6 @@
                     </button>
                     <label class="error lengthLow" id="h1-length"></label>
                     <div class="form-control editable" id="h1" placeholder="Use keywords in the headline."></div>
-                    <div id="h1-quality"></div>
                 </div>
                 <div class="form-group">
                     <label for="text" class="name">Text</label>
@@ -132,24 +129,8 @@
                     </button>
                     <label class="error lengthLow" id="text-length"></label>
                     <div id="text" class="form-control editable textarea scrollable" placeholder="Write a text that contains keywords from the title, description and headline."></div>
-                    <div id="text-quality">
-                        <div class="row">
-                            <div class="col-xs-12">&nbsp;</div>
-                        </div>
-                    </div>
                 </div>
             </div>
-            <!-- div class="col-xs-4">
-                <label for="serp-box" class="name">&nbsp;</label>
-                <div class="panel panel-danger">
-                    <div class="panel-heading">
-                        <h2 class="panel-title">We need to talk</h2>
-                    </div>
-                    <div class="panel-body">
-                        abc
-                    </div>
-                </div>
-            </div -->
         </div>
 
         <div class="row spacer">

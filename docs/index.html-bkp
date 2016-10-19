@@ -1,0 +1,181 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-language" content="en">
+    <link rel="alternate" href="http:seo-text-editor.com" hreflang="en" />
+    <title>SEO Text Editor | Keywords Cross-Checked | SERP Preview</title>
+    <script defer src="js/bundle.min.js"></script>
+    <meta name="description" content="SEO Text Editor allows editors to write consistent texts. Keywords are cross-checked in Title, Heading and the Copy. Stop Words and SERP Preview included.">
+    <link href="seo.ico" rel="shortcut icon" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+            <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+            <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+            <li><a data-toggle="tab" href="#menu3">Menu 3</a></li>
+          </ul>
+
+          <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+              <h3>HOME</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div id="menu1" class="tab-pane fade">
+              <h3>Menu 1</h3>
+              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div id="menu2" class="tab-pane fade">
+              <h3>Menu 2</h3>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+            </div>
+            <div id="menu3" class="tab-pane fade">
+              <h3>Menu 3</h3>
+              <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+            </div>
+          </div>
+
+        <div class="row">
+            <div class="col-md-5">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="brand">SEO Text Editor</div>
+                        <h1 class="slogan hidden-xs"><span class="hidden-xs hidden-sm">&bull; </span>Cross-checks keywords<span class="hidden-md hidden-lg"> &bull; </span><p class="hidden-xs hidden-sm"></p><span class="hidden-xs hidden-sm">&bull; </span>Shows text length in pixels, chars, words<span class="hidden-md hidden-lg"> &bull; </span><p class="hidden-xs hidden-sm"></p><span class="hidden-xs hidden-sm">&bull; </span>SERP preview</h1>
+                    </div>
+                </div>
+                <div class="row hidden-xs hidden-sm">
+                    <div class="col-xs-12">
+                        <div class="intro">
+                            <div class="well">
+                                <p><strong>This SEO Text Editor enables editors to write consistent, SEO optimised texts.</strong></p>
+                                <p>The tool checks the field length of Title, Meta Description, Heading 1 and the Copy itself. Additionally, Keywords are cross-checked to make sure they appear consistently in the various fields. At the same time it ignores
+                                    German and English Stop Words. Last but not least, a SERP preview is available.</p>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h2 class="panel-title">Applied SEO rules</h2>
+                                </div>
+                                <div class="panel-body">
+                                    <ul>
+                                        <li>Common English and German stopwords are ignored.</li>
+                                        <li>Character and pixel count are validated and displayed above the input fields.</li>
+                                        <li>Keywords in the <strong>Title</strong> need to appear in the Text.</li>
+                                        <li>Keywords in the <strong>Title</strong> are not to be repeated in the Title.</li>
+                                        <li>Keywords in the <strong>Headline 1</strong> need to appear in the Text.</li>
+                                        <li>At least 3 Keywords in the <strong>Meta Description</strong> need to appear in the Text.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-7">
+                <div class="form-group">
+                    <label for="serp-box" class="name">SERP Preview</label>
+                    <div id="serp-box" class="panel">
+                        <div>
+                            <a href="#" id="serp-title">Write Title Tags that Describe the Content</a>
+                        </div>
+                        <div id="serp-url-desc">
+                            <div id="serp-url">www.example.com/</div>
+                            <div id="serp-desc">Use meta descriptions to describe your page content. Google uses relevant meta descriptions to create the snippet that Describe your page in SERP listings.</div>
+                        </div>
+                    </div>
+                </div>
+                <form>
+                    <div class="form-group">
+                        <label for="url" class="name">URL</label><span id="url-warning" class="label label-warning"><span class="glyphicon glyphicon-warning" aria-hidden="true"></span> Entering an URL will update all fields!</span>
+                        <label id="url-spinner"><span class="glyphicon glyphicon-repeat normal-right-spinner"></span> Please wait...</label>
+
+                        <!-- label class="error" id="url-length"></label -->
+                        <div class="form-control" id="url" placeholder="www.example.com/"></div>
+                        <!-- div id="url-quality"></div -->
+                    </div>
+                    <div class="form-group">
+                        <label for="title" class="name">Site Title</label><label class="error lengthLow" id="title-length"></label>
+                        <div class="editable form-control" id="title" placeholder="Write Title Tags that Describe the Content and Encourages Clicks"></div>
+                        <div id="title-quality">
+                            <div class="row">
+                                <div class="col-xs-12">&nbsp;</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="description" class="name">Meta Description</label><label class="error lengthLow" id="description-length"></label>
+                        <div id="description" class="form-control editable textarea" placeholder="Use meta descriptions to describe your page content. Google uses relevant meta descriptions to create the snippet that Describe your page in SERP listings."></div>
+                        <div id="description-quality"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="h1" class="name">Heading 1</label><label class="error lengthLow" id="h1-length"></label>
+                        <div class="form-control editable" id="h1" placeholder="Use keywords in the headline."></div>
+                        <div id="h1-quality"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="text" class="name">Text</label><label class="error lengthLow" id="text-length"></label>
+                        <div id="text" class="form-control editable textarea scrollable" placeholder="Write a text that contains keywords from the title, description and headline."></div>
+                        <div id="text-quality">
+                            <div class="row">
+                                <div class="col-xs-12">&nbsp;</div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row spacer">
+            <div class="col-md-5">
+            </div>
+            <div class="col-md-7">
+                <hr class="style-four" />
+                <div id="disqus_thread"></div>
+                <!-- script>
+                    var disqus_config = function() {
+                        this.page.url = 'http://seo-text-editor.com';
+                        this.page.identifier = 'PAGE_MAIN';
+                    };
+
+                    (function() { // DON'T EDIT BELOW THIS LINE
+                        var d = document,
+                            s = d.createElement('script');
+
+                        s.src = '//seo-text-editor.disqus.com/embed.js';
+
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                    })();
+                </script -->
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+            </div>
+        </div>
+        <div id="serp-title-test" style="font-size: 18px; font-family: arial, sans-serif;"></div>
+    </div>
+    <!-- script id="dsq-count-scr" src="//seo-text-editor.disqus.com/count.js" async></script -->
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-2442441-7', 'auto');
+        ga('send', 'pageview');
+    </script>
+</body>
+
+</html>
